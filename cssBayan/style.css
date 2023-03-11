@@ -1,0 +1,56 @@
+*{
+  margin: 0 auto ;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Verdana' , sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  margin: 0 40px;
+  max-width: 600px;
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+}
+
+.accord_title {
+  text-align: center;
+}
+
+.container .tab {
+  position: relative;
+  padding: 0 10px 10px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.1); 
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.container .tab input {
+  appearance: none;
+}
+
+.container .tab label {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.mem_img {
+  max-width: 50%;
+}
