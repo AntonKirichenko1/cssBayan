@@ -122,6 +122,7 @@ input[name='bayan']:hover ~ .gg + .mem_description  {
   }
   .mem_section {
     width: 100%;
+  }
   .mem_description {
     font-size: 0.8em ;
   }
