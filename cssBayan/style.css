@@ -1,0 +1,174 @@
+ 
+body {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 100%;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 140%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: hsl(0, 2%, 32%);
+  width: 90%;
+  
+}
+
+.mem_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.mem_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.mem_img {
+  max-width: 95%;
+  max-height: 100%;
+}
+
+input[name='bayan'] {
+  display: none;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8em;
+  width: 100%;
+  height: 2.5em;
+  border-bottom: 0.1em solid hsl(200, 96%, 80%);
+  background: hsl(210, 2%, 20%);
+  color: hsl(46, 77%, 46%);
+}
+
+.mem_description {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+label:hover  {
+  background: hsl(180, 8%, 29%);
+  cursor: pointer;
+}
+
+label:hover .label_ico {
+  rotate: 90deg;
+}
+
+label:hover .mem_description {
+  color: hsl(42, 94%, 49%) ;
+}
+
+.mem_description {
+  margin: 0;
+}
+input[name='bayan'] + .mem_inner {
+  overflow: hidden;
+  height: 0;
+  transition: height 1s ease;
+}
+
+@media screen and (min-width:320px){
+  input[name='bayan']:checked + .test {
+    height: 300px; 
+  }
+}
+
+ @media screen and (min-width: 820px) {
+
+  input[name = 'bayan']:checked + .test {
+    height: 500px;
+  }
+
+  .mem_description {
+    font-size: 1.5em;
+    padding-left: 1.5em;
+  }
+
+  .wrapper {
+    width: 70%;
+  }
+ }
+
+ @media screen and (min-width: 1920px) {
+  .mem_description {
+    font-size: 1.6em;
+  }
+
+  .wrapper {
+    max-width: 50%;
+  }
+ }
+  
+
+.test_label {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* /////////////////////////////////////////////////////////////////////////// */
+
+
+input[name='bayan'] + .test {
+  overflow: hidden;
+  height: 0;
+  transition: height 1s ease;
+}
+
+input[name='bayan']:checked + .test {
+  overflow: auto;
+  height: 700px; 
+}
+
+.gg:hover .test .mem_img  {
+  overflow: auto;
+  height: 700px; 
+}
+
+.mem_img:hover h3 {
+  color: aqua;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width:320px) {
+  input[name='bayan']:checked + .test {
+    overflow: auto;
+    height: auto; 
+  }
+}
+
+@media screen and (min-width:820px) {
+  input[name='bayan']:checked + .test {
+    overflow: auto;
+    height: 500px; 
+  }
+}
+
+@media (hover:hover) {
+  input[name='bayan']:hover + .test {
+  overflow: auto;
+  height: 500px;
+}
+
+.gp:hover {
+  cursor: pointer;
+}
+
+}
