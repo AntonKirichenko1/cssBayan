@@ -160,7 +160,7 @@ input[name='bayan']:checked + .test {
   }
 }
 
-@media (hover) {
+@media (hover:hover) {
   input[name='bayan']:hover + .test {
   overflow: auto;
   height: 500px;
