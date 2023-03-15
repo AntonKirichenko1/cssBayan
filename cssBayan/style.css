@@ -79,30 +79,15 @@ input[name='bayan'] + .mem_inner {
   transition: height 1s ease;
 }
 
-input[name='bayan']:checked + .mem_inner {
-  overflow: auto;
-  height: 700px; 
-}
-
-input[name='bayan']:hover + .mem_inner {
-  overflow: auto;
-  height: 500px;
-}
-
-input[name = 'bayan'] ~ .mem_inner + .mem_img {
-  height: 0;
-  width: 0;
-}
-
 @media screen and (min-width:320px){
-  input[name='bayan']:checked + .mem_inner {
+  input[name='bayan']:checked + .test {
     height: 300px; 
   }
 }
 
  @media screen and (min-width: 820px) {
 
-  input[name = 'bayan']:checked + .mem_inner {
+  input[name = 'bayan']:checked + .test {
     height: 500px;
   }
 
@@ -147,11 +132,6 @@ input[name='bayan']:checked + .test {
   height: 700px; 
 }
 
-input[name='bayan']:hover + .test {
-  overflow: auto;
-  height: 500px;
-}
-
 .gg:hover .test .mem_img  {
   overflow: auto;
   height: 700px; 
@@ -165,3 +145,31 @@ input[name='bayan']:hover + .test {
   display: flex;
   justify-content: center;
 }
+
+@media screen and (min-width:320px) {
+  input[name='bayan']:checked + .test {
+    overflow: auto;
+    height: auto; 
+  }
+}
+
+@media screen and (min-width:820px) {
+  input[name='bayan']:checked + .test {
+    overflow: auto;
+    height: 500px; 
+  }
+}
+
+@media (hover) {
+  input[name='bayan']:hover + .test {
+  overflow: auto;
+  height: 500px;
+}
+
+.gp:hover {
+  cursor: pointer;
+}
+
+}
+
+  
